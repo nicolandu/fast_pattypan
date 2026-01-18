@@ -78,10 +78,11 @@ public class Main extends Application {
     );
 
     String os = System.getProperty("os.name");
+    String javaVersion = System.getProperty("java.version");
 
     Session.LOGGER.log(Level.INFO,
-            "Operating System: {0}\nPattypan Version: {1}",
-            new String[]{os, Settings.VERSION}
+            "Operating System: {0}\nJava version: {1}\nPattypan Version: {2}",
+            new String[]{os, javaVersion, Settings.VERSION}
     );
 
     Session.WIKI = Wiki.newSession(wiki, scriptPath, protocol);
