@@ -116,7 +116,7 @@ public class StartPane extends GridPane {
             new WikiLabel("start-validate-description").setWidth(300)));
 
     String year = new SimpleDateFormat("yyyy").format(new Date());
-    this.addRow(40, new WikiLabel(year + " // Pawel Marynowski").setClass("muted"));
+    this.addRow(40, new WikiLabel(year + " Pawel Marynowski " + Util.text("start-contributors")).setClass("muted"));
 
     TextFlow flow = new TextFlow(
             new Text(Util.text("start-bug-found")), bugLink,
